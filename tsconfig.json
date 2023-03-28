@@ -1,0 +1,7 @@
+{
+  "extends": "@bricked/ts-config/node",
+  "compilerOptions": {
+    "rootDir": "src/",
+    "outDir": "dist/"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "name": "@bricked/ts-template",
+  "private": false,
+  "description": "A ts-template for my projects.",
+  "keywords": [
+    "ts-template"
+  ],
+  "homepage": "https://github.com/brycked/ts-template#readme",
+  "bugs": {
+    "url": "https://github.com/brycked/ts-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brycked/ts-template.git"
+  },
+  "license": "MIT",
+  "author": "Bricked",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "format": "npx sort-package-json && npx prettier --write . && npx eslint --fix --no-error-on-unmatched-pattern .",
+    "prepare": "npx husky install",
+    "watch": "npx tsc -w"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "!(*.ts|package.json)": "npx prettier --ignore-unknown --write",
+    "*.ts": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ],
+    "package.json": [
+      "npx sort-package-json",
+      "npx prettier --write"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "printWidth": 80,
+    "quoteProps": "as-needed",
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "project": "tsconfig.json",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "plugin:@typescript-eslint/strict",
+      "prettier"
+    ],
+    "rules": {
+      "@typescript-eslint/no-namespace": "off",
+      "@typescript-eslint/prefer-literal-enum-member": "off"
+    },
+    "root": true
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ],
+    "dryRun": true,
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md"
+          ]
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@bricked/ts-config": "^1.2.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "commitlint": "^17.5.1",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7",
+    "sort-package-json": "^2.4.1",
+    "typescript": "^5.0.2"
+  }
+}
