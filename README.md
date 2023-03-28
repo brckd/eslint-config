@@ -1,27 +1,19 @@
-# @bricked/ts-template
+# @bricked/eslint-config
 
-[![license](https://img.shields.io/github/license/brycked/ts-template)](LICENSE.md)
+[![license](https://img.shields.io/github/license/brycked/eslint-config)](LICENSE.md)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
-[![version](https://img.shields.io/npm/v/@bricked/ts-template?color=crimson&logo=npm)](https://www.npmjs.com/package/@bricked/ts-template)
+[![version](https://img.shields.io/npm/v/@bricked/eslint-config?color=crimson&logo=npm)](https://www.npmjs.com/package/@bricked/eslint-config)
 
-A ts-template for my projects.
-
-## ToDo
-
-- [ ] Find & replace `ts-template` with the name of this repository
-- [ ] Find & replace the description with a proper one
-- [ ] Add `NPM_TOKEN` as a [new repository secret](https://github.com/brycked/ts-template/settings/secrets/actions/new)
-- [ ] Remove `"dryRun": true` from the [`package.json`](./package.json)
-- [ ] Remove this section
+Shared ESLint configuration for my projects.
 
 ## Installation
 
 ```sh
-npm install @bricked/ts-template
-yarn add @bricked/ts-template
-pnpm add @bricked/ts-template
+npm install @bricked/eslint-config
+yarn add @bricked/eslint-config
+pnpm add @bricked/eslint-config
 ```
 
 ## Usage
 
-`ts-template` can be used as a ts-template for my projects.
+`eslint-config` can be used as a shared ESLint configuration for my projects.
