@@ -9,9 +9,9 @@ Shared ESLint configuration for my projects.
 ## Installation
 
 ```sh
-npm install @bricked/eslint-config
-yarn add @bricked/eslint-config
-pnpm add @bricked/eslint-config
+npm install --save-dev @bricked/eslint-config
+yarn add --dev @bricked/eslint-config
+pnpm add --dev @bricked/eslint-config
 ```
 
 ## Usage
