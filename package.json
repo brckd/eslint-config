@@ -40,16 +40,7 @@
       "npx prettier --write"
     ]
   },
-  "prettier": {
-    "endOfLine": "lf",
-    "printWidth": 80,
-    "quoteProps": "as-needed",
-    "semi": true,
-    "singleQuote": false,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
-  },
+  "prettier": "@bricked/prettier-config",
   "eslintConfig": {
     "extends": "./dist/index.js"
   },
@@ -83,6 +74,7 @@
     ]
   },
   "devDependencies": {
+    "@bricked/prettier-config": "^1.0.0",
     "@bricked/ts-config": "^1.2.0",
     "@commitlint/config-conventional": "^17.4.4",
     "@types/eslint": "^8.21.3",
