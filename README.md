@@ -16,4 +16,20 @@ pnpm add --dev @bricked/eslint-config
 
 ## Usage
 
-`eslint-config` can be used as a shared ESLint configuration for my projects.
+Add the ESLint config to your `package.json`:
+
+```json
+{
+  "eslintConfig": {
+    "extends": "@bricked"
+  }
+}
+```
+
+Or to `.eslintrc`:
+
+```json
+{
+  "extends": "@bricked"
+}
+```
