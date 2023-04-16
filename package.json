@@ -88,6 +88,6 @@
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
     "sort-package-json": "^2.4.1",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   }
 }
