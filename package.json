@@ -76,7 +76,7 @@
   "devDependencies": {
     "@bricked/prettier-config": "^1.0.0",
     "@bricked/ts-config": "^1.2.2",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/config-conventional": "^17.6.1",
     "@types/eslint": "^8.37.0",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "commitlint": "^17.5.1",
